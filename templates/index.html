@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Analysis & Crop Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Soil Analysis & Crop Recommendation</h1>
+    <div class="upload-section">
+        <h3>Upload Soil Test Report</h3>
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="uploadImage()">Analyze</button>
+    </div>
+    <div id="results" class="results" style="display:none;">
+        <h3>Soil Data Extracted:</h3>
+        <pre id="soilData"></pre>
+        <h3>Recommended Crops:</h3>
+        <ul id="recommendations"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
